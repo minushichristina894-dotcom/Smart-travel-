@@ -1,0 +1,60 @@
+SMART TRAVEL PLANNER — PROJECT STRUCTURE (University Final Year)
+===============================================================
+
+INTERFACE: Unchanged — same colors, fonts, buttons, layouts, navigation.
+
+
+frontend/
+│
+├── src/
+│   ├── pages/          React page connectors (routing only)
+│   ├── components/     Reusable UI (Navbar, Sidebar, Button...)
+│   ├── css/            CSS styling files
+│   │   ├── index.css   Main app styles (Tailwind + buttons, cards)
+│   │   ├── auth.css    Login & Register pages
+│   │   └── activities.css
+│   ├── js/             JavaScript logic (29 page files)
+│   ├── html/           HTML structure reference (29 .html files)
+│   ├── services/       API calls (Axios)
+│   │   ├── api.js      Node.js REST API (port 5000)
+│   │   └── flaskApi.js Python Flask direct (port 5001)
+│   ├── App.jsx         React Router
+│   └── main.jsx        App entry
+│
+└── index.html          Main HTML shell
+
+
+backend/
+│
+├── app.py              Python Flask — main entry (port 5001)
+├── routes.py           Flask routes — returns JSON
+├── weather_analysis.py Weather risk rules (safe / moderate / high)
+├── database.py         MySQL helper for weather logs
+├── requirements.txt    Python packages
+│
+├── server.js           Node.js Express API (port 5000) — auth, bookings
+├── controllers/        Node.js business logic
+├── routes/             Node.js API routes
+└── database/           MySQL schema
+
+
+HOW TECHNOLOGIES CONNECT
+------------------------
+1. HTML  → inside React JSX + src/html/*.html reference files
+2. CSS   → src/css/*.css
+3. JS    → src/js/*.js (page logic)
+4. React → src/pages/*.jsx (small connectors, routing)
+5. Axios → src/services/api.js → Node.js (port 5000)
+6. Flask → backend/app.py (port 5001) → JSON weather risk
+7. Node  → fetches OpenWeatherMap → sends data to Flask → returns to React
+
+
+START PROJECT
+-------------
+.\start.ps1
+
+Opens:
+  http://mysystemtravelbook.local:5173  Frontend (friendly name)
+  http://localhost:5173                 Frontend (same site)
+  http://localhost:5000  Node.js API
+  http://localhost:5001  Python Flask

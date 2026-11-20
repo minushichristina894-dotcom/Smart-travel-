@@ -1,0 +1,56 @@
+<!-- ============================================================
+     TRIP REPORT PAGE — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/tripReportPage.js
+     React connector: src/pages/customer/TripReportPage.jsx
+     ============================================================ -->
+
+<div class="trip-report-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="trip-report-header">
+    <div>
+      <h1>Trip Report</h1>
+      <p id="reportBookingId">Booking #—</p>
+    </div>
+    <button type="button" class="print-report-btn" id="printReportBtn">Print Report</button>
+  </header>
+
+  <div id="reportError" class="alert alert--error" hidden></div>
+
+  <div id="reportContent" hidden>
+    <section class="card mb-6">
+      <h2 id="reportDestination" class="text-primary-600">Destination Name</h2>
+      <div class="report-details-grid">
+        <div><span>Customer</span><p id="reportCustomer">—</p></div>
+        <div><span>Email</span><p id="reportEmail">—</p></div>
+        <div><span>Travel Date</span><p id="reportTravelDate">—</p></div>
+        <div><span>Travelers</span><p id="reportTravelers">—</p></div>
+        <div><span>Activity</span><p id="reportActivity">—</p></div>
+        <div><span>Total (LKR)</span><p id="reportTotal">—</p></div>
+        <div><span>Payment</span><p id="reportPayment">—</p></div>
+        <div><span>Booking Status</span><p id="reportStatus">—</p></div>
+      </div>
+    </section>
+
+    <section class="card mb-6">
+      <h3>Weather Risk Assessment</h3>
+      <p class="text-sm text-gray-500">Based on live weather data</p>
+      <span id="reportRiskBadge" class="risk-badge">—</span>
+      <div id="reportWeatherStats" class="weather-stats-grid mt-4" hidden>
+        <div><span>Temp</span><p id="reportTemp">—°C</p></div>
+        <div><span>Rain</span><p id="reportRain">— mm</p></div>
+        <div><span>Wind</span><p id="reportWind">— km/h</p></div>
+        <div><span>Humidity</span><p id="reportHumidity">—%</p></div>
+      </div>
+      <p id="reportWeatherRec" class="mt-4"></p>
+    </section>
+
+    <section class="card" id="reportAboutSection" hidden>
+      <h3 id="reportAboutTitle">About Destination</h3>
+      <p id="reportAboutText" class="text-sm text-gray-600"></p>
+    </section>
+
+    <a href="/bookings" class="back-link">← Back to My Bookings</a>
+  </div>
+</div>

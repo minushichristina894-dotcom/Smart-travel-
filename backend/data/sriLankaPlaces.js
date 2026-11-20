@@ -1,0 +1,30 @@
+/**
+ * Popular Sri Lanka places — used for search suggestions and geocoding fallback
+ */
+module.exports = [
+  { name: 'Colombo', lat: 6.9271, lon: 79.8612 },
+  { name: 'Kandy', lat: 7.2906, lon: 80.6337 },
+  { name: 'Galle', lat: 6.0329, lon: 80.2170 },
+  { name: 'Ella', lat: 6.8667, lon: 81.0466 },
+  { name: 'Sigiriya', lat: 7.9570, lon: 80.7603 },
+  { name: 'Nuwara Eliya', lat: 6.9497, lon: 80.7891 },
+  { name: 'Mirissa', lat: 5.9483, lon: 80.4716 },
+  { name: 'Anuradhapura', lat: 8.3114, lon: 80.4037 },
+  { name: 'Polonnaruwa', lat: 7.9403, lon: 81.0188 },
+  { name: 'Trincomalee', lat: 8.5874, lon: 81.2152 },
+  { name: 'Jaffna', lat: 9.6615, lon: 80.0255 },
+  { name: 'Negombo', lat: 7.2088, lon: 79.8358 },
+  { name: 'Bentota', lat: 6.4218, lon: 80.0000 },
+  { name: 'Hikkaduwa', lat: 6.1397, lon: 80.1006 },
+  { name: 'Matara', lat: 5.9549, lon: 80.5550 },
+  { name: 'Ratnapura', lat: 6.6828, lon: 80.4036 },
+  { name: 'Badulla', lat: 6.9934, lon: 81.0550 },
+  { name: 'Dambulla', lat: 7.8567, lon: 80.6492 },
+  { name: 'Horton Plains', lat: 6.8021, lon: 80.8074 },
+  { name: 'Yala', lat: 6.3724, lon: 81.5170 },
+  { name: 'Adam\'s Peak', lat: 6.8096, lon: 80.4994 },
+  { name: 'Arugam Bay', lat: 6.8406, lon: 81.8360 },
+  { name: 'Batticaloa', lat: 7.7102, lon: 81.6924 },
+  { name: 'Kalutara', lat: 6.5854, lon: 79.9607 },
+  { name: 'Unawatuna', lat: 6.0125, lon: 80.2489 },
+];

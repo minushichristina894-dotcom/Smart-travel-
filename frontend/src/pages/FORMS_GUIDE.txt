@@ -1,0 +1,59 @@
+SMART TRAVEL PLANNER — ALL FORMS (wanted only)
+==============================================
+
+These are the ONLY forms in your system. Everything else was removed.
+
+
+PUBLIC SIDE (no login)
+----------------------
+1. LoginPage.jsx          → /login
+   Fields: username, password
+
+2. RegisterPage.jsx       → /register
+   Fields: full name, username, email, phone, password, confirm password
+
+3. VerifyEmailPage.jsx    → /verify-email
+   (link from email — not a big form)
+
+4. RegisterSuccessPage.jsx → /register-success
+   Resend verification email field
+
+
+CUSTOMER SIDE (user login)
+--------------------------
+5. BookingPage.jsx        → /booking
+   Fields: destination, activity, travelers, travel date
+
+6. PaymentPage.jsx        → /payment/:id
+   Fields: card number, name, expiry, CVV, payment method
+
+7. ProfilePage.jsx        → /profile
+   Fields: full name, email, phone, profile picture
+
+8. WeatherRiskPage.jsx    → /weather-risk
+   Fields: destination search, travel date (check weather)
+
+
+ADMIN SIDE (admin login)
+------------------------
+9.  AdminStaff.jsx        → /admin/staff
+    Form: add new staff member
+
+10. AdminDestinations.jsx → /admin/destinations
+    Form: add / edit destination
+
+11. AdminActivities.jsx   → /admin/activities
+    Form: add activity (destination, name, price, age, image)
+
+
+STAFF SIDE (staff login)
+------------------------
+No add forms — staff only views and confirms bookings
+(staff pages are tables/lists, not create forms)
+
+
+DELETED (unwanted — not in system anymore)
+------------------------------------------
+- Contact form (was fake — did not save anywhere)
+- Manage Packages form (was not connected / not used)
+- Duplicate html-auth login/register HTML copies in public folder

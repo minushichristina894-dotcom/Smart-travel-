@@ -1,0 +1,52 @@
+<!-- ============================================================
+     LOGIN PAGE — HTML STRUCTURE
+     CSS: src/css/auth.css
+     JS:  src/js/loginPage.js
+     React connector: src/pages/public/LoginPage.jsx (small)
+     ============================================================ -->
+
+<div class="auth-page">
+  <aside class="auth-hero">
+    <img src="/login-hero.jpg" alt="Sri Lanka beach" class="auth-hero__img" />
+    <div class="auth-hero__overlay--login"></div>
+    <header class="auth-hero__top auth-hero__top--login">
+      <a href="/" class="auth-logo-link">
+        <img src="/logo.png" alt="Smart Travel Sri Lanka" class="auth-logo auth-logo--hero" />
+      </a>
+    </header>
+    <div class="auth-hero__bottom">
+      <div class="auth-hero__text">
+        <h2 class="auth-hero__title">Travel Sri Lanka — Plan, Book &amp; Go</h2>
+        <p class="auth-hero__desc">
+          For locals and visitors. Discover places across the island, check weather before you travel, and book your trip in LKR.
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <main class="auth-form-panel">
+    <div class="auth-form-wrap">
+      <header class="auth-header">
+        <h1 class="auth-header__title">Welcome Back</h1>
+        <p class="auth-header__sub">Sign in with your username and password</p>
+      </header>
+
+      <div class="auth-card">
+        <form class="auth-form auth-form--login" id="loginForm">
+          <div class="auth-field">
+            <label class="auth-label" for="username">Username<span class="auth-required">*</span></label>
+            <input id="username" class="auth-input" type="text" placeholder="Enter username" />
+          </div>
+          <div class="auth-field">
+            <label class="auth-label" for="password">Password<span class="auth-required">*</span></label>
+            <input id="password" class="auth-input" type="password" placeholder="Enter password" />
+          </div>
+          <button type="submit" class="login-btn auth-btn auth-btn--primary">Login</button>
+        </form>
+        <p class="auth-footer">
+          New customer? <a href="/register" class="auth-link">Create account</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>

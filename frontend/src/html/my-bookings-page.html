@@ -1,0 +1,47 @@
+<!-- ============================================================
+     MY BOOKINGS PAGE — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/myBookingsPage.js
+     React connector: src/pages/customer/MyBookingsPage.jsx
+     ============================================================ -->
+
+<div class="my-bookings-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>My Bookings</h1>
+    <p>View bookings, pay unpaid trips, and open trip reports</p>
+  </header>
+
+  <div id="bookingsAlert" class="alert" hidden></div>
+
+  <div id="bookingsLoading" class="loading-state">Loading bookings...</div>
+
+  <div id="bookingsEmpty" class="card text-center" hidden>
+    <h3>No bookings yet</h3>
+    <p>Start planning your next adventure!</p>
+    <a href="/booking" class="book-trip-btn">Book a Trip</a>
+  </div>
+
+  <div id="bookingsList" class="bookings-list">
+    <!-- Each booking card (filled by myBookingsPage.js) -->
+    <article class="booking-card card">
+      <img src="/logo.png" alt="" class="booking-card__image" />
+      <div class="booking-card__body">
+        <h3 class="booking-card__destination">Destination Name</h3>
+        <p class="booking-card__country">Sri Lanka</p>
+        <div class="booking-card__meta">
+          <div><span>Travel Date</span><p>—</p></div>
+          <div><span>Travelers</span><p>—</p></div>
+          <div><span>Total Price</span><p>Rs. 0</p></div>
+          <div><span>Risk</span><p>—</p></div>
+        </div>
+      </div>
+      <div class="booking-card__actions">
+        <button type="button" class="pay-now-btn">Pay Now</button>
+        <a href="/trip-report/1" class="trip-report-btn">Trip Report</a>
+        <button type="button" class="btn-danger-outline">Cancel</button>
+      </div>
+    </article>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+/**
+ * FORMS — Semantic form section and field names
+ */
+
+@layer components {
+
+  /* ----- Booking ----- */
+  .booking-form-section {
+    @apply space-y-5;
+  }
+
+  .booking-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  .booking-form-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white
+           focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500
+           transition-all duration-200 placeholder:text-gray-400;
+  }
+
+  /* ----- Payment ----- */
+  .payment-form-section {
+    @apply space-y-4;
+  }
+
+  .payment-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  /* ----- Profile ----- */
+  .profile-form-section {
+    @apply space-y-4;
+  }
+
+  .profile-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  /* ----- Weather search ----- */
+  .weather-search-form-section {
+    @apply space-y-4;
+  }
+
+  .weather-search-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6 mb-8;
+  }
+
+  /* ----- Admin forms ----- */
+  .admin-activity-form-section {
+    @apply space-y-4;
+  }
+
+  .admin-activity-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6 mb-6;
+  }
+
+  .admin-destination-form-section {
+    @apply space-y-4;
+  }
+
+  .admin-destination-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6 mb-8;
+  }
+
+  .admin-staff-form-section {
+    @apply grid sm:grid-cols-2 gap-4;
+  }
+
+  .admin-staff-form-card {
+    @apply bg-white rounded-2xl shadow-card p-6 mb-6;
+  }
+
+  /* ----- Destinations search ----- */
+  .destination-search-form-section {
+    @apply mb-8;
+  }
+
+  .destination-search-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white max-w-md
+           focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500
+           transition-all duration-200 placeholder:text-gray-400;
+  }
+
+  .payment-form-field,
+  .profile-form-field,
+  .weather-search-form-field,
+  .admin-form-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white
+           focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500
+           transition-all duration-200 placeholder:text-gray-400;
+  }
+
+}

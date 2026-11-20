@@ -1,0 +1,44 @@
+<!-- ============================================================
+     STAFF DASHBOARD — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/staffDashboard.js
+     React connector: src/pages/staff/StaffDashboard.jsx
+     ============================================================ -->
+
+<div class="staff-dashboard-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Staff Dashboard</h1>
+    <p>Your job: confirm customer bookings, monitor weather risks, and support travelers.</p>
+  </header>
+
+  <div id="staffStatsLoading" class="loading-state">Loading...</div>
+
+  <div id="staffStatsContent" hidden>
+    <div class="stats-grid" id="staffStatsCards">
+      <!-- Filled by staffDashboard.js -->
+      <article class="card border-l-primary"><p>Today's Trips</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Pending (Needs Action)</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Completed</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Weather Alerts</p><p class="stat-value">0</p></article>
+    </div>
+
+    <div class="quick-links-grid">
+      <a href="/staff/bookings" class="card">Manage Bookings</a>
+      <a href="/staff/weather-alerts" class="card">Weather Alerts</a>
+      <a href="/staff/customers" class="card">View Customers</a>
+    </div>
+
+    <section class="card">
+      <header class="dashboard-section-header">
+        <h2>Pending Bookings — Action Required</h2>
+        <a href="/staff/bookings">View all</a>
+      </header>
+      <div id="pendingBookingsList" class="pending-bookings">
+        <!-- Filled by staffDashboard.js -->
+      </div>
+      <p id="noPendingBookings" class="empty-state" hidden>No pending bookings.</p>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+ALL 29 PAGES — HTML + CSS + JS + React (complete list)
+======================================================
+
+Side     | Page file              | HTML file                      | CSS file           | JS file
+---------|------------------------|--------------------------------|--------------------|---------------------------
+PUBLIC   | LandingPage.jsx        | html/landing-page.html         | index.css          | scripts/landingPage.js
+PUBLIC   | AboutPage.jsx          | html/about-page.html           | index.css          | scripts/aboutPage.js
+PUBLIC   | DestinationsPage.jsx   | html/destinations-page.html    | index.css          | scripts/destinationsPage.js
+PUBLIC   | DestinationDetailsPage | html/destination-details-page  | index.css          | scripts/destinationDetailsPage.js
+PUBLIC   | ActivitiesPage.jsx     | html/activities.html           | styles/activities.css + index.css | scripts/activitiesPage.js
+PUBLIC   | ActivityDetailsPage.jsx| html/activity-details-page.html| index.css          | scripts/activityDetailsPage.js
+PUBLIC   | LoginPage.jsx          | html/login.html                | styles/auth.css    | scripts/loginPage.js
+PUBLIC   | RegisterPage.jsx       | html/register.html             | styles/auth.css    | scripts/registerPage.js
+PUBLIC   | RegisterSuccessPage.jsx| html/register-success-page.html| styles/auth.css    | scripts/registerSuccessPage.js
+PUBLIC   | VerifyEmailPage.jsx    | html/verify-email-page.html    | styles/auth.css    | scripts/verifyEmailPage.js
+
+CUSTOMER | DashboardPage.jsx      | html/dashboard-page.html       | index.css          | scripts/dashboardPage.js
+CUSTOMER | BookingPage.jsx        | html/booking.html              | index.css          | scripts/bookingPage.js
+CUSTOMER | MyBookingsPage.jsx     | html/my-bookings-page.html     | index.css          | scripts/myBookingsPage.js
+CUSTOMER | PaymentPage.jsx        | html/payment-page.html         | index.css          | scripts/paymentPage.js
+CUSTOMER | WeatherRiskPage.jsx    | html/weather-risk-page.html    | index.css          | scripts/weatherRiskPage.js
+CUSTOMER | ProfilePage.jsx        | html/profile-page.html         | index.css          | scripts/profilePage.js
+CUSTOMER | TripReportPage.jsx     | html/trip-report-page.html     | index.css          | scripts/tripReportPage.js
+
+STAFF   | StaffDashboard.jsx      | html/staff-dashboard.html      | index.css          | scripts/staffDashboard.js
+STAFF   | StaffBookings.jsx       | html/staff-bookings.html       | index.css          | scripts/staffBookings.js
+STAFF   | StaffCustomers.jsx      | html/staff-customers.html      | index.css          | scripts/staffCustomers.js
+STAFF   | StaffWeatherAlerts.jsx  | html/staff-weather-alerts.html | index.css          | scripts/staffWeatherAlerts.js
+STAFF   | StaffActivityMonitor.jsx| html/staff-activity-monitor.html| index.css         | scripts/staffActivityMonitor.js
+
+ADMIN   | AdminDashboard.jsx      | html/admin-dashboard.html      | index.css          | scripts/adminDashboard.js
+ADMIN   | AdminUsers.jsx          | html/admin-users.html          | index.css          | scripts/adminUsers.js
+ADMIN   | AdminStaff.jsx          | html/admin-staff.html          | index.css          | scripts/adminStaff.js
+ADMIN   | AdminDestinations.jsx   | html/admin-destinations.html   | index.css          | scripts/adminDestinations.js
+ADMIN   | AdminActivities.jsx     | html/admin-activities.html     | index.css          | scripts/adminActivitiesPage.js
+ADMIN   | AdminBookings.jsx       | html/admin-bookings.html       | index.css          | scripts/adminBookings.js
+ADMIN   | AdminSettings.jsx       | html/admin-settings.html       | index.css          | scripts/adminSettings.js
+
+PYTHON  | (weather module)        | —                              | —                  | python-service/app.py
+
+BACKEND | (API server)            | —                              | —                  | backend/*.js
+
+React connector = each .jsx file in pages/ folder (small — links HTML + CSS + JS)

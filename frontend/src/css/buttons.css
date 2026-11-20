@@ -1,0 +1,207 @@
+/**
+ * BUTTONS — Semantic class names for viva / demo
+ * Each button has a unique name so you can find and edit it easily
+ */
+
+@layer components {
+
+  /* ----- Auth ----- */
+  .login-btn,
+  .register-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           hover:shadow-glass hover:-translate-y-0.5 active:translate-y-0
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .go-to-login-btn,
+  .create-account-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .resend-verification-btn,
+  .back-to-register-btn {
+    @apply border border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-semibold w-full
+           hover:border-primary-500 hover:text-primary-500 transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* ----- Landing & public ----- */
+  .start-planning-btn,
+  .create-free-account-btn {
+    @apply bg-primary-500 text-white px-8 py-3 rounded-xl font-semibold text-lg
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           hover:shadow-glass hover:-translate-y-0.5;
+  }
+
+  .explore-destinations-btn,
+  .view-all-destinations-btn,
+  .sign-up-free-btn {
+    @apply bg-white text-primary-500 border-2 border-primary-500 px-6 py-3 rounded-xl
+           font-semibold hover:bg-primary-50 transition-all duration-300;
+  }
+
+  .navbar-login-btn {
+    @apply border border-gray-200 text-gray-700 px-4 py-1.5 rounded-lg text-sm
+           hover:border-primary-500 hover:text-primary-500 transition-all duration-200;
+  }
+
+  .navbar-register-btn {
+    @apply bg-primary-500 text-white px-4 py-1.5 rounded-lg text-sm font-semibold
+           hover:bg-primary-600 transition-all duration-300;
+  }
+
+  .logout-btn {
+    @apply w-full text-left px-4 py-3 rounded-xl text-sm font-medium text-red-600
+           hover:bg-red-50 transition-colors;
+  }
+
+  .navbar-logout-btn {
+    @apply border border-gray-200 text-gray-700 px-4 py-1.5 rounded-lg text-sm
+           hover:border-red-400 hover:text-red-600 transition-all duration-200;
+  }
+
+  /* ----- Destinations & activities ----- */
+  .view-destination-details-btn,
+  .view-activity-btn,
+  .book-activity-btn {
+    @apply bg-primary-500 text-white px-6 py-2 rounded-xl font-semibold text-sm w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .back-to-destinations-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold
+           hover:bg-primary-600 transition-all duration-300;
+  }
+
+  .book-now-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .check-weather-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .weather-risk-link-btn {
+    @apply bg-white text-primary-500 border-2 border-primary-500 px-6 py-3 rounded-xl
+           font-semibold hover:bg-primary-50 transition-all duration-300 w-full;
+  }
+
+  /* ----- Customer dashboard & booking ----- */
+  .book-trip-btn {
+    @apply bg-primary-500 text-white px-6 py-2 rounded-xl font-semibold text-sm
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .weather-risk-btn,
+  .analyze-weather-btn,
+  .download-weather-pdf-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .email-weather-pdf-btn {
+    @apply bg-white text-primary-600 px-6 py-3 rounded-xl font-semibold w-full
+           border-2 border-primary-500 hover:bg-primary-50 transition-all duration-300
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .confirm-booking-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .back-to-booking-form-btn {
+    @apply border border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-semibold w-full
+           hover:border-primary-500 hover:text-primary-500 transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .save-profile-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .payment-btn,
+  .pay-now-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold w-full
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .view-my-bookings-btn,
+  .back-to-bookings-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .trip-report-btn,
+  .print-report-btn {
+    @apply border border-gray-200 text-gray-700 px-4 py-2 rounded-lg
+           hover:border-primary-500 hover:text-primary-500 transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* ----- Admin ----- */
+  .add-activity-btn,
+  .create-activity-btn,
+  .add-destination-btn,
+  .save-destination-btn,
+  .add-staff-btn,
+  .create-staff-btn {
+    @apply bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold text-sm
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .cancel-activity-form-btn,
+  .cancel-destination-form-btn {
+    @apply bg-white text-primary-500 border-2 border-primary-500 px-6 py-3 rounded-xl
+           font-semibold text-sm hover:bg-primary-50 transition-all duration-300
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .edit-destination-btn {
+    @apply border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg text-xs flex-1
+           hover:border-primary-500 hover:text-primary-500 transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .delete-destination-btn,
+  .delete-user-btn {
+    @apply bg-red-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex-1
+           hover:bg-red-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* ----- Staff ----- */
+  .confirm-staff-booking-btn,
+  .complete-booking-btn {
+    @apply bg-primary-500 text-white px-4 py-2 rounded-xl font-semibold text-sm
+           hover:bg-primary-600 transition-all duration-300 shadow-soft
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .staff-booking-details-btn {
+    @apply border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm
+           hover:border-primary-500 hover:text-primary-500 transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .cancel-booking-btn {
+    @apply bg-red-500 text-white px-4 py-2 rounded-xl font-semibold text-sm
+           hover:bg-red-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+}

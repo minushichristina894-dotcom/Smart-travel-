@@ -1,0 +1,62 @@
+<!-- ============================================================
+     ADMIN STAFF — HTML STRUCTURE (add staff form)
+     CSS: src/index.css
+     JS:  src/js/adminStaff.js
+     React connector: src/pages/admin/AdminStaff.jsx
+     ============================================================ -->
+
+<div class="admin-staff-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header flex justify-between">
+    <h1>Manage Staff</h1>
+    <button type="button" class="add-staff-btn" id="showAddStaffBtn">+ Add Staff</button>
+  </header>
+
+  <div id="staffAlert" class="alert" hidden></div>
+
+  <form id="addStaffForm" class="card admin-form grid-2" hidden>
+    <div class="form-field">
+      <label for="full_name">Full Name *</label>
+      <input id="full_name" name="full_name" type="text" required />
+    </div>
+    <div class="form-field">
+      <label for="username">Username *</label>
+      <input id="username" name="username" type="text" required />
+    </div>
+    <div class="form-field">
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+    <div class="form-field">
+      <label for="password">Password *</label>
+      <input id="password" name="password" type="password" required />
+    </div>
+    <div class="form-field">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" />
+    </div>
+    <div class="form-field">
+      <label for="department">Department</label>
+      <input id="department" name="department" type="text" value="Operations" />
+    </div>
+    <button type="submit" class="create-staff-btn col-span-2">Create Staff</button>
+  </form>
+
+  <div class="card overflow-x-auto">
+    <table class="admin-table" id="staffTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="staffTableBody">
+        <!-- Filled by adminStaff.js -->
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<!-- ============================================================
+     WEATHER RISK PAGE — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/weatherRiskPage.js
+     React connector: src/pages/customer/WeatherRiskPage.jsx
+     ============================================================ -->
+
+<div class="weather-risk-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header text-center">
+    <h1>Weather Risk Analysis</h1>
+    <p>Check weather for any place in Sri Lanka before you travel</p>
+  </header>
+
+  <form id="weatherRiskForm" class="card mb-8">
+    <div class="form-field">
+      <label for="placeName">Search Place in Sri Lanka *</label>
+      <div class="relative">
+        <input id="placeName" name="place_name" type="text" placeholder="Type any place... e.g. Kandy, Ella, Jaffna" autocomplete="off" required />
+        <ul id="placeSuggestions" class="suggestions-dropdown" hidden></ul>
+      </div>
+      <p class="text-xs text-gray-400">Examples: Colombo, Sigiriya, Nuwara Eliya, Trincomalee</p>
+    </div>
+
+    <div class="form-field">
+      <label for="travelDate">Travel Date *</label>
+      <input id="travelDate" name="travel_date" type="date" required />
+    </div>
+
+    <button type="submit" class="analyze-weather-btn w-full" id="analyzeBtn">Get Real-Time Weather &amp; Risk Analysis</button>
+  </form>
+
+  <div id="weatherError" class="alert alert--error" hidden></div>
+
+  <section id="weatherResult" class="weather-result" hidden>
+    <div class="card text-center border-2" id="riskReportCard">
+      <h3>Travel Risk Report</h3>
+      <p id="resultPlaceDate" class="text-sm text-gray-500"></p>
+      <span id="resultRiskBadge" class="risk-badge">safe</span>
+      <p id="resultRecommendation" class="font-medium mt-4"></p>
+    </div>
+
+    <div class="card">
+      <h3 id="resultDestinationName">Destination</h3>
+      <div class="weather-stats-grid">
+        <div><span>Temperature</span><p id="resultTemp">—°C</p></div>
+        <div><span>Rainfall</span><p id="resultRain">— mm</p></div>
+        <div><span>Wind Speed</span><p id="resultWind">— km/h</p></div>
+        <div><span>Humidity</span><p id="resultHumidity">—%</p></div>
+      </div>
+      <p id="resultCondition" class="text-sm text-gray-500 mt-4"></p>
+    </div>
+
+    <div class="glass-card">
+      <h4>How we assess travel risk</h4>
+      <p><strong>High Risk:</strong> Rain &gt; 20mm OR Wind &gt; 35 km/h</p>
+      <p><strong>Moderate Risk:</strong> Rain 5-20mm OR Wind 20-35 km/h</p>
+      <p><strong>Safe:</strong> All conditions within safe ranges</p>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,2 @@
+STAFF SIDE — Staff login only
+Username: staff01  |  Password: staff123

@@ -1,0 +1,39 @@
+<!-- ============================================================
+     ACTIVITIES PAGE — HTML STRUCTURE
+     CSS: src/css/activities.css + src/index.css
+     JS:  src/js/activitiesPage.js
+     React connector: src/pages/public/ActivitiesPage.jsx (small)
+     ============================================================ -->
+
+<div class="activities-page">
+  <!-- Navbar component loads here (React) -->
+
+  <section class="activities-hero">
+    <h1 class="activities-hero__title">Activities in Sri Lanka</h1>
+    <p class="activities-hero__subtitle">Choose from curated experiences across the island</p>
+  </section>
+
+  <section class="activities-content">
+    <div class="activities-grid">
+      <!-- Each activity card (filled by JavaScript from API) -->
+      <article class="activities-card">
+        <div class="activities-card__body">
+          <h3 class="activities-card__name">Activity Name</h3>
+          <p class="activities-card__destination">Destination</p>
+          <span class="activities-card__age">All Ages</span>
+          <p class="activities-card__desc">Description text</p>
+          <div class="activities-card__meta">
+            <span class="activities-card__price">Rs. 1,500</span>
+            <span class="activities-card__duration">2h</span>
+          </div>
+          <a href="/activities/1" class="view-activity-btn activities-card__btn">View Details</a>
+        </div>
+        <div class="activities-card__image-wrap">
+          <img src="/logo.png" alt="Activity" class="activities-card__image" />
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer component loads here (React) -->
+</div>

@@ -1,0 +1,80 @@
+<!-- ============================================================
+     ADMIN DESTINATIONS — HTML STRUCTURE (add/edit form)
+     CSS: src/index.css
+     JS:  src/js/adminDestinations.js
+     React connector: src/pages/admin/AdminDestinations.jsx
+     ============================================================ -->
+
+<div class="admin-destinations-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header flex justify-between">
+    <h1>Manage Destinations</h1>
+    <button type="button" class="add-destination-btn" id="showAddDestinationBtn">+ Add Destination</button>
+  </header>
+
+  <div id="destinationsAlert" class="alert" hidden></div>
+
+  <form id="destinationForm" class="card admin-form" hidden>
+    <h3 id="destinationFormTitle">Add Destination</h3>
+
+    <div class="grid-2">
+      <div class="form-field">
+        <label for="name">Name *</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+      <div class="form-field">
+        <label for="country">Country *</label>
+        <input id="country" name="country" type="text" required />
+      </div>
+      <div class="form-field">
+        <label for="price">Price (LKR) *</label>
+        <input id="price" name="price" type="number" required />
+      </div>
+      <div class="form-field">
+        <label for="image_url">Image URL *</label>
+        <input id="image_url" name="image_url" type="url" required />
+      </div>
+      <div class="form-field">
+        <label for="latitude">Latitude</label>
+        <input id="latitude" name="latitude" type="number" step="any" />
+      </div>
+      <div class="form-field">
+        <label for="longitude">Longitude</label>
+        <input id="longitude" name="longitude" type="number" step="any" />
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="description">Description *</label>
+      <textarea id="description" name="description" rows="3" required></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="gallery">Gallery URLs (comma separated)</label>
+      <input id="gallery" name="gallery" type="text" />
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="save-destination-btn" id="destinationSubmitBtn">Create</button>
+      <button type="button" class="cancel-destination-form-btn" id="cancelDestinationBtn">Cancel</button>
+    </div>
+  </form>
+
+  <div id="destinationsLoading" class="loading-state">Loading destinations...</div>
+
+  <div id="destinationsGrid" class="admin-destinations-grid">
+    <!-- Each destination card (filled by adminDestinations.js) -->
+    <article class="card destination-admin-card">
+      <img src="/logo.png" alt="Destination" />
+      <div class="p-4">
+        <h3>Destination Name</h3>
+        <p class="text-sm text-gray-500">Country · Rs. 0</p>
+        <div class="flex gap-2 mt-3">
+          <button type="button" class="edit-destination-btn">Edit</button>
+          <button type="button" class="btn-danger">Delete</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>

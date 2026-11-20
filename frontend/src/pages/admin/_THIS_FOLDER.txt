@@ -1,0 +1,2 @@
+ADMIN SIDE — Admin login only
+Username: admin  |  Password: admin123

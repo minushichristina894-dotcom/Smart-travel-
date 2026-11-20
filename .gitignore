@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.tools/
+
+# Secrets — never commit real keys
+.env
+backend/.env
+frontend/.env
+**/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Uploads and logs
+backend/uploads/
+*.log
+
+# Build
+frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

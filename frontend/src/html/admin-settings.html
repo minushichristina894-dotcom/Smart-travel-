@@ -1,0 +1,27 @@
+<!-- ============================================================
+     ADMIN SETTINGS — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/adminSettings.js
+     React connector: src/pages/admin/AdminSettings.jsx
+     ============================================================ -->
+
+<div class="admin-settings-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>System Settings</h1>
+  </header>
+
+  <div id="settingsAlert" class="alert" hidden></div>
+
+  <div class="card" id="settingsList">
+    <!-- Each setting row (filled by adminSettings.js) -->
+    <div class="setting-row">
+      <div>
+        <p class="font-medium">Setting Key</p>
+        <p class="text-sm text-gray-500">Setting value</p>
+      </div>
+    </div>
+    <p class="text-sm text-gray-400">Weather API: Open-Meteo → Node.js → Python Flask (port 5001)</p>
+  </div>
+</div>

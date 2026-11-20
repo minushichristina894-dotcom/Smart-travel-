@@ -1,0 +1,45 @@
+<!-- ============================================================
+     BOOKING PAGE — HTML STRUCTURE (Step 1 form)
+     CSS: src/index.css
+     JS:  src/js/bookingPage.js
+     React connector: src/pages/customer/BookingPage.jsx
+     ============================================================ -->
+
+<div class="booking-page">
+  <h1>Book Your Trip</h1>
+
+  <form id="bookingForm" class="booking-form">
+    <div class="form-field">
+      <label for="destination_id">Destination *</label>
+      <select id="destination_id" name="destination_id" required>
+        <option value="">Select destination</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="activity_id">Activity (optional)</label>
+      <select id="activity_id" name="activity_id">
+        <option value="">Optional — choose activity</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="travelers">Number of Travelers *</label>
+      <input id="travelers" name="travelers" type="number" min="1" value="1" required />
+    </div>
+
+    <div class="form-field">
+      <label for="travel_date">Travel Date *</label>
+      <input id="travel_date" name="travel_date" type="date" required />
+    </div>
+
+    <button type="button" class="check-weather-btn" id="checkWeatherBtn">Check Weather Risk</button>
+    <button type="submit" class="confirm-booking-btn" id="confirmBookingBtn">Confirm Booking</button>
+  </form>
+
+  <section id="weatherResult" class="weather-result" hidden>
+    <h2>Weather Risk Result</h2>
+    <p id="riskLevel">Risk: —</p>
+    <p id="recommendation">—</p>
+  </section>
+</div>

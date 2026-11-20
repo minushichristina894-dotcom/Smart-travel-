@@ -1,0 +1,2 @@
+USER / CUSTOMER SIDE — Login required
+Customer must register, verify email, and login

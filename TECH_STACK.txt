@@ -1,0 +1,37 @@
+SMART TRAVEL PLANNER — TECHNOLOGY STACK (for interim / viva)
+=============================================================
+
+Your whole system uses ONLY these technologies:
+
+| Layer          | Technology                    | Language type      |
+|----------------|-------------------------------|--------------------|
+| Frontend UI    | React, HTML5, CSS3, JavaScript | JavaScript + HTML + CSS |
+| Backend API    | Node.js, Express.js           | JavaScript         |
+| Database       | MySQL                         | SQL (data storage) |
+| Weather Module | Python, Flask                 | Python             |
+| Weather Data   | OpenWeatherMap API            | External API       |
+
+IMPORTANT:
+- React IS JavaScript (JSX files = JavaScript + HTML-like tags)
+- Node.js backend IS JavaScript (.js files)
+- Python is ONLY used for weather risk in python-service/app.py
+- No Java, C#, PHP, or other languages in your project code
+
+
+PROJECT FOLDERS
+---------------
+
+Iterim_Project/
+├── frontend/          → User interface (React = JS + HTML + CSS)
+│   └── src/pages/
+│       ├── public/    → Guest pages (no login)
+│       ├── customer/  → User pages (customer login)
+│       ├── staff/     → Staff pages
+│       └── admin/     → Admin pages
+├── backend/           → API server (Node.js JavaScript)
+└── python-service/    → Weather analysis (Python Flask)
+
+
+SEE ALSO
+--------
+frontend/src/pages/PAGES_GUIDE.txt  → full list of every page and URL

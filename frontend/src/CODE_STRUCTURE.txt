@@ -1,0 +1,19 @@
+SMART TRAVEL PLANNER — CODE STRUCTURE
+=====================================
+
+frontend/src/
+  html/       → HTML structure (.html) — 29 pages
+  css/        → CSS styling (.css)
+  js/         → JavaScript logic (.js) — 29 pages
+  pages/      → React connectors (.jsx) — same interface
+  services/   → Axios API (api.js + flaskApi.js)
+
+backend/
+  app.py              → Python Flask (weather)
+  routes.py
+  weather_analysis.py
+  database.py
+  server.js           → Node.js API (auth, bookings)
+  requirements.txt
+
+See PROJECT_STRUCTURE.txt in project root for full guide.

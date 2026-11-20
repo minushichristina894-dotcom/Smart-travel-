@@ -1,0 +1,82 @@
+SMART TRAVEL PLANNER — PAGE FOLDER GUIDE
+
+=========================================
+
+
+
+1) public/     = PUBLIC SIDE (no login)
+
+   LandingPage.jsx
+
+   AboutPage.jsx
+
+   DestinationsPage.jsx
+
+   DestinationDetailsPage.jsx
+
+   ActivitiesPage.jsx
+
+   ActivityDetailsPage.jsx
+
+   LoginPage.jsx
+
+   RegisterPage.jsx
+
+   RegisterSuccessPage.jsx
+
+   VerifyEmailPage.jsx
+
+
+
+2) customer/   = USER SIDE (customer login)
+
+   DashboardPage.jsx
+
+   BookingPage.jsx
+
+   MyBookingsPage.jsx
+
+   PaymentPage.jsx
+
+   WeatherRiskPage.jsx
+
+   ProfilePage.jsx
+
+   TripReportPage.jsx
+
+
+
+3) staff/      = STAFF SIDE
+
+   StaffDashboard.jsx
+
+   StaffBookings.jsx
+
+   StaffCustomers.jsx
+
+   StaffWeatherAlerts.jsx
+
+   StaffActivityMonitor.jsx
+
+
+
+4) admin/      = ADMIN SIDE
+
+   AdminDashboard.jsx
+
+   AdminUsers.jsx
+
+   AdminStaff.jsx
+
+   AdminDestinations.jsx
+
+   AdminActivities.jsx
+
+   AdminBookings.jsx
+
+   AdminSettings.jsx
+
+
+
+See FORMS_GUIDE.txt for list of all forms only.
+

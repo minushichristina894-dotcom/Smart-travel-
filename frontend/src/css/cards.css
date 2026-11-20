@@ -1,0 +1,162 @@
+/**
+ * CARDS — Semantic card class names
+ */
+
+@layer components {
+
+  /* ----- Dashboard ----- */
+  .dashboard-welcome-card {
+    @apply mb-8 p-6 rounded-2xl bg-gradient-to-r from-primary-500 to-primary-600 text-white;
+  }
+
+  .dashboard-upcoming-trips-card,
+  .dashboard-recent-bookings-card,
+  .dashboard-recommended-destinations-card,
+  .dashboard-quick-actions-card {
+    @apply bg-white rounded-2xl shadow-card p-6 transition-all duration-300
+           hover:shadow-glass hover:-translate-y-1;
+  }
+
+  .dashboard-live-weather-card {
+    @apply bg-white/70 backdrop-blur-md rounded-2xl border border-white/50 shadow-glass p-6;
+  }
+
+  .dashboard-risk-alert-card {
+    @apply bg-white rounded-2xl shadow-card p-6 border-l-4 border-primary-500;
+  }
+
+  /* ----- Landing ----- */
+  .landing-feature-card {
+    @apply bg-white rounded-2xl shadow-card p-6 text-center transition-all duration-300
+           hover:shadow-glass hover:-translate-y-1;
+  }
+
+  .landing-activity-preview-card {
+    @apply bg-white rounded-2xl shadow-card p-6 transition-all duration-300
+           hover:shadow-glass hover:-translate-y-1;
+  }
+
+  /* ----- Activities ----- */
+  .activity-list-card {
+    @apply bg-white rounded-2xl shadow-card overflow-hidden transition-all duration-300
+           hover:shadow-glass hover:-translate-y-1;
+  }
+
+  .activity-details-card {
+    @apply bg-white rounded-2xl shadow-card overflow-hidden p-0;
+  }
+
+  /* ----- Destinations ----- */
+  .destination-list-card {
+    @apply bg-white rounded-2xl shadow-card overflow-hidden p-0
+           transition-all duration-300 hover:shadow-glass hover:-translate-y-1;
+  }
+
+  .destination-info-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  .destination-booking-sidebar-card {
+    @apply bg-white rounded-2xl shadow-card p-6 sticky top-24;
+  }
+
+  .destination-activities-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  /* ----- Booking ----- */
+  .booking-weather-result-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  .booking-success-card {
+    @apply bg-white rounded-2xl shadow-card p-6 text-center py-10;
+  }
+
+  /* ----- Customer pages ----- */
+  .my-bookings-empty-card {
+    @apply bg-white rounded-2xl shadow-card p-6 text-center py-16;
+  }
+
+  .my-bookings-list-card {
+    @apply bg-white rounded-2xl shadow-card p-6 flex flex-col md:flex-row gap-6
+           items-start md:items-center;
+  }
+
+  .payment-summary-card {
+    @apply bg-white rounded-2xl shadow-card p-6 mb-6 bg-gray-50;
+  }
+
+  .trip-report-summary-card,
+  .trip-report-weather-card,
+  .trip-report-details-card {
+    @apply bg-white rounded-2xl shadow-card p-6 mb-6;
+  }
+
+  .weather-result-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  /* ----- Auth status ----- */
+  .verify-email-card {
+    @apply bg-white rounded-2xl shadow-card p-6 max-w-md w-full text-center shadow-lg;
+  }
+
+  .register-success-card {
+    @apply bg-white rounded-2xl shadow-card p-6 max-w-lg w-full shadow-lg;
+  }
+
+  /* ----- Admin ----- */
+  .admin-stats-card {
+    @apply bg-white rounded-2xl shadow-card p-6 border-l-4 border-primary-500
+           hover:shadow-glass transition-shadow;
+  }
+
+  .admin-overview-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  .admin-activities-table-card,
+  .admin-users-table-card,
+  .admin-bookings-table-card,
+  .admin-staff-table-card {
+    @apply bg-white rounded-2xl shadow-card p-6 overflow-x-auto;
+  }
+
+  .admin-settings-card {
+    @apply bg-white rounded-2xl shadow-card p-6 space-y-4;
+  }
+
+  .admin-destination-grid-card {
+    @apply bg-white rounded-2xl shadow-card p-0 overflow-hidden;
+  }
+
+  /* ----- Staff ----- */
+  .staff-dashboard-stat-card {
+    @apply bg-white rounded-2xl shadow-card p-6 border-l-4 border-primary-500
+           hover:shadow-glass transition-shadow;
+  }
+
+  .staff-quick-link-card {
+    @apply bg-white rounded-2xl shadow-card p-6 hover:bg-primary-50 transition-colors;
+  }
+
+  .staff-pending-bookings-card {
+    @apply bg-white rounded-2xl shadow-card p-6;
+  }
+
+  .staff-pending-booking-card {
+    @apply p-4 bg-yellow-50 border border-yellow-100 rounded-xl;
+  }
+
+  .staff-bookings-empty-card,
+  .staff-weather-alerts-card {
+    @apply bg-white rounded-2xl shadow-card p-6 text-center py-12 text-gray-500;
+  }
+
+  .staff-customers-table-card,
+  .staff-activity-monitor-card {
+    @apply bg-white rounded-2xl shadow-card p-6 overflow-x-auto;
+  }
+
+}

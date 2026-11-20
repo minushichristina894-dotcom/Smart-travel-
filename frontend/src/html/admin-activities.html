@@ -1,0 +1,63 @@
+<!-- ============================================================
+     ADMIN — MANAGE ACTIVITIES FORM
+     CSS: src/index.css
+     JS:  src/js/adminActivitiesPage.js
+     React connector: src/pages/admin/AdminActivities.jsx
+     ============================================================ -->
+
+<div class="admin-activities">
+  <header class="admin-activities__header">
+    <h1>Manage Activities</h1>
+    <button type="button" class="add-activity-btn" id="showAddFormBtn">+ Add Activity</button>
+  </header>
+
+  <form id="addActivityForm" class="admin-form card" hidden>
+    <div class="form-field">
+      <label for="destination_id">Destination *</label>
+      <select id="destination_id" name="destination_id" required></select>
+    </div>
+    <div class="form-field">
+      <label for="name">Activity Name *</label>
+      <input id="name" name="name" type="text" required />
+    </div>
+    <div class="form-field">
+      <label for="description">Description</label>
+      <input id="description" name="description" type="text" />
+    </div>
+    <div class="form-field">
+      <label for="price">Price (LKR) *</label>
+      <input id="price" name="price" type="number" required />
+    </div>
+    <div class="form-field">
+      <label for="duration_hours">Duration (hours)</label>
+      <input id="duration_hours" name="duration_hours" type="number" value="2" />
+    </div>
+    <div class="form-field">
+      <label for="age_category">Age Category *</label>
+      <select id="age_category" name="age_category" required>
+        <option value="Kids">Kids — Under 12 years</option>
+        <option value="Adults">Adults — 18 years and above</option>
+        <option value="All Ages" selected>All Ages — Family friendly</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label for="image_url">Image URL</label>
+      <input id="image_url" name="image_url" type="url" placeholder="https://..." />
+    </div>
+    <button type="submit" class="create-activity-btn">Create</button>
+  </form>
+
+  <table class="admin-table" id="activitiesTable">
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Activity</th>
+        <th>Destination</th>
+        <th>Age Category</th>
+        <th>Price</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody id="activitiesTableBody"></tbody>
+  </table>
+</div>

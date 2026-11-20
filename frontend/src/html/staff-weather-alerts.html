@@ -1,0 +1,39 @@
+<!-- ============================================================
+     STAFF WEATHER ALERTS — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/staffWeatherAlerts.js
+     React connector: src/pages/staff/StaffWeatherAlerts.jsx
+     ============================================================ -->
+
+<div class="staff-weather-alerts-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Weather Alerts</h1>
+    <p>Staff task: Contact customers with moderate or high risk and advise rescheduling if needed.</p>
+  </header>
+
+  <div class="filter-tabs">
+    <button type="button" id="filterRisk" class="filter-tab active">Moderate &amp; High Risk</button>
+    <button type="button" id="filterAll" class="filter-tab">All Logs</button>
+  </div>
+
+  <div id="weatherAlertsLoading" class="loading-state">Loading alerts...</div>
+
+  <div id="weatherAlertsEmpty" class="card text-center" hidden>
+    <p>No weather alerts yet.</p>
+  </div>
+
+  <div id="weatherAlertsList" class="weather-alerts-list">
+    <!-- Each alert card (filled by staffWeatherAlerts.js) -->
+    <article class="card weather-alert-card border-l-yellow">
+      <div>
+        <p class="font-semibold">Destination Name</p>
+        <p class="text-sm text-gray-500">Travel date · Customer name</p>
+        <p class="text-sm mt-2">Recommendation text</p>
+        <p class="text-xs text-gray-400">Temp · Rain · Wind</p>
+      </div>
+      <span class="risk-badge risk-badge--moderate">moderate</span>
+    </article>
+  </div>
+</div>

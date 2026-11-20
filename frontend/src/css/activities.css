@@ -1,0 +1,61 @@
+/* Activities page — CSS
+   HTML: src/html/activities.html
+   JS:  src/js/activitiesPage.js
+   Uses shared semantic buttons/cards from css/buttons.css and css/cards.css */
+
+.activities-page {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.activities-hero {
+  background: #2E7D32;
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.activities-hero__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.activities-hero__subtitle {
+  color: #C8E6C9;
+}
+
+.activities-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.activities-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .activities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .activities-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.activities-card__image-wrap {
+  flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #f3f4f6;
+}
+
+.activities-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

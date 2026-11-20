@@ -1,0 +1,37 @@
+<!-- ============================================================
+     ADMIN BOOKINGS — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/adminBookings.js
+     React connector: src/pages/admin/AdminBookings.jsx
+     ============================================================ -->
+
+<div class="admin-bookings-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Manage Bookings</h1>
+  </header>
+
+  <div id="adminBookingsAlert" class="alert" hidden></div>
+  <div id="adminBookingsLoading" class="loading-state">Loading bookings...</div>
+
+  <div class="card overflow-x-auto" id="adminBookingsTableWrap" hidden>
+    <table class="admin-table" id="adminBookingsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User</th>
+          <th>Destination</th>
+          <th>Date</th>
+          <th>Travelers</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="adminBookingsBody">
+        <!-- Filled by adminBookings.js -->
+      </tbody>
+    </table>
+  </div>
+</div>

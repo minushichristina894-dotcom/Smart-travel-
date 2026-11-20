@@ -1,0 +1,54 @@
+<!-- ============================================================
+     STAFF BOOKINGS — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/staffBookings.js
+     React connector: src/pages/staff/StaffBookings.jsx
+     ============================================================ -->
+
+<div class="staff-bookings-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Manage Bookings</h1>
+    <p>Confirm new trips, update status, and check weather risk before approving.</p>
+  </header>
+
+  <div class="alert alert--info">Staff work: Review pending bookings → Confirm if safe → Mark completed after trip.</div>
+
+  <div class="filter-tabs" id="bookingFilters">
+    <button type="button" data-filter="all" class="filter-tab active">All</button>
+    <button type="button" data-filter="pending" class="filter-tab">Pending</button>
+    <button type="button" data-filter="confirmed" class="filter-tab">Confirmed</button>
+    <button type="button" data-filter="completed" class="filter-tab">Completed</button>
+    <button type="button" data-filter="cancelled" class="filter-tab">Cancelled</button>
+  </div>
+
+  <div id="staffBookingsLoading" class="loading-state">Loading bookings...</div>
+
+  <div id="staffBookingsEmpty" class="card text-center" hidden>
+    <p>No bookings in this category.</p>
+  </div>
+
+  <div id="staffBookingsList" class="staff-bookings-list">
+    <!-- Each booking card (filled by staffBookings.js) -->
+    <article class="card booking-staff-card">
+      <div class="booking-staff-card__info">
+        <p class="font-bold">Destination Name</p>
+        <p class="text-sm text-gray-500">Customer · email · phone</p>
+        <div class="booking-staff-card__badges">
+          <span class="badge badge--pending">pending</span>
+        </div>
+      </div>
+      <div class="booking-staff-card__actions">
+        <button type="button" class="confirm-staff-booking-btn">Confirm Trip</button>
+        <button type="button" class="btn-danger">Reject</button>
+        <select class="status-select">
+          <option value="pending">Pending</option>
+          <option value="confirmed">Confirmed</option>
+          <option value="completed">Completed</option>
+          <option value="cancelled">Cancelled</option>
+        </select>
+      </div>
+    </article>
+  </div>
+</div>

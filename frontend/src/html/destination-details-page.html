@@ -1,0 +1,60 @@
+<!-- ============================================================
+     DESTINATION DETAILS PAGE — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/destinationDetailsPage.js
+     React connector: src/pages/public/DestinationDetailsPage.jsx
+     ============================================================ -->
+
+<div class="destination-details-page min-h-screen">
+  <!-- Navbar component loads here (React) -->
+
+  <section class="destination-details-hero">
+    <img id="heroImage" src="/logo.png" alt="Destination" class="destination-details-hero__image" />
+    <div class="destination-details-hero__overlay">
+      <span id="destinationCountry" class="destination-details-hero__country">Sri Lanka</span>
+      <h1 id="destinationName" class="destination-details-hero__title">Destination Name</h1>
+      <p id="destinationPrice" class="destination-details-hero__price">Rs. 0 per person</p>
+    </div>
+  </section>
+
+  <main class="destination-details-content">
+    <div class="destination-details-main">
+      <div id="galleryThumbs" class="destination-gallery" hidden></div>
+
+      <section class="card">
+        <h2 id="aboutTitle">About Destination</h2>
+        <p id="destinationDescription">Description text</p>
+      </section>
+
+      <section class="card">
+        <h2>Activities</h2>
+        <div id="activitiesList" class="destination-activities">
+          <!-- Filled by destinationDetailsPage.js -->
+        </div>
+      </section>
+
+      <section class="glass-card">
+        <h2>Weather Intelligence</h2>
+        <p>Check weather conditions and travel risk before you book.</p>
+        <a id="weatherRiskLink" href="/weather-risk" class="weather-risk-link-btn">Check Weather Risk</a>
+      </section>
+    </div>
+
+    <aside class="destination-details-sidebar">
+      <div class="card sticky">
+        <h3>Book This Trip</h3>
+        <p class="text-sm text-gray-500">Starting from</p>
+        <p id="sidebarPrice" class="text-4xl font-bold text-primary-500">Rs. 0</p>
+        <a id="bookNowLink" href="/booking" class="book-now-btn w-full">Book Now</a>
+        <a id="checkWeatherLink" href="/weather-risk" class="check-weather-btn w-full">Check Weather</a>
+      </div>
+
+      <div class="card" id="sidebarActivities" hidden>
+        <h3>Available Activities</h3>
+        <div id="sidebarActivitiesList"></div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer component loads here (React) -->
+</div>

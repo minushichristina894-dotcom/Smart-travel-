@@ -1,0 +1,38 @@
+<!-- ============================================================
+     DESTINATIONS PAGE — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/destinationsPage.js
+     React connector: src/pages/public/DestinationsPage.jsx
+     ============================================================ -->
+
+<div class="destinations-page min-h-screen">
+  <!-- Navbar component loads here (React) -->
+
+  <section class="destinations-hero">
+    <h1 class="destinations-hero__title">Explore Sri Lanka</h1>
+    <p class="destinations-hero__subtitle">Discover the Pearl of the Indian Ocean — all prices in Sri Lankan Rupees</p>
+  </section>
+
+  <section class="destinations-content">
+    <div class="destinations-search">
+      <input id="destinationSearch" type="text" placeholder="Search destinations or countries..." class="destination-search-field" />
+    </div>
+
+    <div id="destinationsGrid" class="destinations-grid">
+      <!-- Each destination card (filled by JavaScript from API) -->
+      <article class="destination-card">
+        <img src="/logo.png" alt="Destination" class="destination-card__image" />
+        <div class="destination-card__body">
+          <h3 class="destination-card__name">Destination Name</h3>
+          <p class="destination-card__country">Sri Lanka</p>
+          <p class="destination-card__price">Rs. 5,000</p>
+          <a href="/destinations/1" class="view-destination-details-btn destination-card__btn">View Details</a>
+        </div>
+      </article>
+    </div>
+
+    <p id="noDestinationsMsg" class="destinations-empty" hidden>No destinations found matching your search.</p>
+  </section>
+
+  <!-- Footer component loads here (React) -->
+</div>

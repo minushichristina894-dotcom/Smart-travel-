@@ -1,0 +1,40 @@
+<!-- ============================================================
+     REGISTER SUCCESS PAGE — HTML STRUCTURE
+     CSS: src/css/auth.css + src/index.css
+     JS:  src/js/registerSuccessPage.js
+     React connector: src/pages/public/RegisterSuccessPage.jsx
+     ============================================================ -->
+
+<div class="auth-page auth-page--centered">
+  <div class="card max-w-lg w-full">
+    <header class="auth-header text-center">
+      <a href="/"><img src="/logo.png" alt="Smart Travel Sri Lanka" class="auth-logo" /></a>
+    </header>
+
+    <div class="auth-icon-wrap">
+      <span class="auth-icon auth-icon--mail" aria-hidden="true">✉</span>
+    </div>
+
+    <h1 class="auth-header__title text-center">Check Your Email</h1>
+    <p class="auth-header__sub text-center">
+      We sent a verification link to <strong id="registeredEmail">your email</strong>.
+      Click the link to activate your account, then login.
+    </p>
+
+    <div id="resendSuccessAlert" class="alert alert--success" hidden>Verification email sent again.</div>
+
+    <div class="auth-info-box">
+      <p>Check your <strong>inbox</strong> and <strong>Spam</strong> folder for the verification link.</p>
+    </div>
+
+    <form id="resendVerificationForm" class="auth-form">
+      <div class="auth-field">
+        <label class="auth-label" for="resendEmail">Resend to email</label>
+        <input id="resendEmail" name="resendEmail" class="auth-input" type="email" placeholder="you@example.lk" />
+      </div>
+      <button type="submit" class="auth-btn auth-btn--outline w-full">Resend Verification Email</button>
+    </form>
+
+    <a href="/login" class="go-to-login-btn auth-btn auth-btn--primary w-full text-center">Go to Login</a>
+  </div>
+</div>

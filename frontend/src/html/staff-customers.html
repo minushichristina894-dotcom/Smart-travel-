@@ -1,0 +1,35 @@
+<!-- ============================================================
+     STAFF CUSTOMERS — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/staffCustomers.js
+     React connector: src/pages/staff/StaffCustomers.jsx
+     ============================================================ -->
+
+<div class="staff-customers-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Customers</h1>
+    <p>View registered customers and contact them about bookings or weather alerts.</p>
+  </header>
+
+  <div id="customersLoading" class="loading-state">Loading customers...</div>
+
+  <div class="card overflow-x-auto" id="customersTableWrap" hidden>
+    <table class="admin-table" id="customersTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Bookings</th>
+        </tr>
+      </thead>
+      <tbody id="customersTableBody">
+        <!-- Filled by staffCustomers.js -->
+      </tbody>
+    </table>
+    <p id="noCustomersMsg" class="empty-state" hidden>No customers registered yet.</p>
+  </div>
+</div>

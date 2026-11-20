@@ -1,0 +1,36 @@
+<!-- ============================================================
+     STAFF ACTIVITY MONITOR — HTML STRUCTURE
+     CSS: src/css/activities.css + src/index.css
+     JS:  src/js/staffActivityMonitor.js
+     React connector: src/pages/staff/StaffActivityMonitor.jsx
+     ============================================================ -->
+
+<div class="staff-activity-monitor-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Activity Monitor</h1>
+    <p>See which activities are booked most — helps staff plan support and resources.</p>
+  </header>
+
+  <div id="activityMonitorLoading" class="loading-state">Loading activities...</div>
+
+  <div id="activityMonitorGrid" class="activity-monitor-grid">
+    <!-- Each activity card (filled by staffActivityMonitor.js) -->
+    <article class="card activity-monitor-card">
+      <div class="activity-monitor-card__header">
+        <div>
+          <h3>Activity Name</h3>
+          <p class="text-sm text-primary-600">Destination</p>
+          <span class="activities-card__age">All Ages</span>
+        </div>
+        <span class="badge">0 booking(s)</span>
+      </div>
+      <p class="text-sm text-gray-500">Description</p>
+      <div class="activity-monitor-card__footer">
+        <span>Rs. 0 · 2h</span>
+        <span class="text-green-600">Active</span>
+      </div>
+    </article>
+  </div>
+</div>

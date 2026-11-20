@@ -1,0 +1,43 @@
+<!-- ============================================================
+     ADMIN DASHBOARD — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/adminDashboard.js
+     React connector: src/pages/admin/AdminDashboard.jsx
+     ============================================================ -->
+
+<div class="admin-dashboard-page">
+  <!-- DashboardLayout sidebar loads here (React) -->
+
+  <header class="page-header">
+    <h1>Admin Dashboard</h1>
+  </header>
+
+  <div id="adminStatsLoading" class="loading-state">Loading stats...</div>
+
+  <div id="adminStatsContent" hidden>
+    <div class="stats-grid stats-grid--5" id="adminStatsCards">
+      <!-- Filled by adminDashboard.js -->
+      <article class="card border-l-primary"><p>Total Users</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Total Staff</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Destinations</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Activities</p><p class="stat-value">0</p></article>
+      <article class="card border-l-primary"><p>Bookings</p><p class="stat-value">0</p></article>
+    </div>
+
+    <section class="card">
+      <h2>Recent Bookings</h2>
+      <table class="admin-table" id="recentBookingsTable">
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Total</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="recentBookingsBody"></tbody>
+      </table>
+    </section>
+  </div>
+</div>

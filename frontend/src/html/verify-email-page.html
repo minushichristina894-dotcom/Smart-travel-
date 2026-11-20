@@ -1,0 +1,30 @@
+<!-- ============================================================
+     VERIFY EMAIL PAGE — HTML STRUCTURE
+     CSS: src/css/auth.css + src/index.css
+     JS:  src/js/verifyEmailPage.js
+     React connector: src/pages/public/VerifyEmailPage.jsx
+     ============================================================ -->
+
+<div class="auth-page auth-page--centered">
+  <div class="card max-w-md w-full">
+    <a href="/"><img src="/logo.png" alt="Smart Travel Sri Lanka" class="auth-logo" /></a>
+
+    <h1 class="auth-header__title">Email Verification</h1>
+    <p class="auth-header__sub">Enter the 6-digit code sent to your inbox. It expires in 10 minutes.</p>
+
+    <form id="verifyOtpForm" class="auth-form">
+      <div class="auth-field">
+        <label class="auth-label" for="verifyEmail">Email</label>
+        <input id="verifyEmail" class="auth-input" type="email" placeholder="you@example.lk" />
+      </div>
+      <div class="auth-field">
+        <label class="auth-label" for="verifyCode">6-digit code</label>
+        <input id="verifyCode" class="auth-input" inputmode="numeric" maxlength="6" placeholder="000000" />
+      </div>
+      <button type="submit" class="auth-btn auth-btn--primary">Verify email</button>
+    </form>
+
+    <button type="button" class="resend-verification-btn auth-btn auth-btn--outline">Resend verification code</button>
+    <a href="/login" class="auth-link">Back to login</a>
+  </div>
+</div>

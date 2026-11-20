@@ -1,0 +1,36 @@
+<!-- ============================================================
+     ACTIVITY DETAILS PAGE — HTML STRUCTURE
+     CSS: src/css/activities.css + src/index.css
+     JS:  src/js/activityDetailsPage.js
+     React connector: src/pages/public/ActivityDetailsPage.jsx
+     ============================================================ -->
+
+<div class="activity-details-page min-h-screen">
+  <!-- Navbar component loads here (React) -->
+
+  <main class="activity-details">
+    <article class="card" id="activityCard">
+      <div class="activity-details__grid">
+        <div class="activity-details__image-wrap">
+          <img id="activityImage" src="/logo.png" alt="Activity" class="activity-details__image" />
+        </div>
+        <div class="activity-details__info">
+          <p id="activityDestination" class="activity-details__destination">Destination, Country</p>
+          <h1 id="activityName" class="activity-details__name">Activity Name</h1>
+          <span id="activityAge" class="activities-card__age">All Ages</span>
+          <p id="activityDesc" class="activity-details__desc">Description text</p>
+        </div>
+      </div>
+
+      <div class="activity-details__meta">
+        <div><p class="label">Price</p><p id="activityPrice" class="value">Rs. 0</p></div>
+        <div><p class="label">Duration</p><p id="activityDuration" class="value">0 hours</p></div>
+        <div><p class="label">Age Category</p><p id="activityAgeMeta" class="value">All Ages</p></div>
+      </div>
+
+      <a id="bookActivityBtn" href="/booking" class="book-activity-btn">Book This Activity</a>
+    </article>
+  </main>
+
+  <!-- Footer component loads here (React) -->
+</div>

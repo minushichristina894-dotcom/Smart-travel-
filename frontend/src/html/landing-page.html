@@ -1,0 +1,65 @@
+<!-- ============================================================
+     LANDING PAGE — HTML STRUCTURE
+     CSS: src/index.css
+     JS:  src/js/landingPage.js
+     React connector: src/pages/public/LandingPage.jsx
+     ============================================================ -->
+
+<div class="landing-page min-h-screen">
+  <!-- Navbar component loads here (React) -->
+
+  <section class="landing-hero">
+    <div class="landing-hero__content">
+      <span class="landing-hero__badge">Discover Beautiful Sri Lanka</span>
+      <h1 class="landing-hero__title">Plan Your Sri Lankan Adventure with <span>Intelligence</span></h1>
+      <p class="landing-hero__subtitle">Explore Sigiriya, Ella, Mirissa and more. Book local packages in LKR and get real-time weather risk alerts.</p>
+      <div class="landing-hero__actions">
+        <a href="/register" class="start-planning-btn">Start Planning</a>
+        <a href="/destinations" class="explore-destinations-btn">Explore Destinations</a>
+      </div>
+    </div>
+    <div class="landing-hero__image-wrap">
+      <img src="/landing-hero.jpg" alt="Nine Arch Bridge, Ella Sri Lanka" class="landing-hero__image" />
+    </div>
+  </section>
+
+  <section class="landing-features">
+    <h2 class="section-title">Weather Safety Features</h2>
+    <div class="landing-features__grid">
+      <article class="card"><h3>Live Weather</h3><p>Up-to-date forecasts for destinations across Sri Lanka.</p></article>
+      <article class="card"><h3>Risk Assessment</h3><p>Clear safe, moderate, or high risk levels.</p></article>
+      <article class="card"><h3>Smart Tips</h3><p>Helpful travel advice for the best time to go.</p></article>
+    </div>
+  </section>
+
+  <section class="landing-destinations">
+    <h2 class="section-title">Featured Destinations in Sri Lanka</h2>
+    <div id="featuredDestinations" class="landing-destinations__grid">
+      <!-- Filled by landingPage.js from API -->
+    </div>
+    <a href="/destinations" class="view-all-destinations-btn">View All</a>
+  </section>
+
+  <section class="landing-activities">
+    <h2 class="section-title">Popular Activities</h2>
+    <div id="popularActivities" class="landing-activities__grid">
+      <!-- Filled by landingPage.js from API -->
+    </div>
+  </section>
+
+  <section class="landing-testimonials">
+    <h2>What Travelers Say</h2>
+    <div class="landing-testimonials__grid">
+      <blockquote class="landing-testimonial"><p>"The weather risk alerts saved our family trip!"</p><cite>— Kamani S.</cite></blockquote>
+      <blockquote class="landing-testimonial"><p>"Best travel planner for exploring Sri Lanka."</p><cite>— Ruwan J.</cite></blockquote>
+      <blockquote class="landing-testimonial"><p>"Love planning trips to Sigiriya and Mirissa."</p><cite>— Dilani F.</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="landing-cta">
+    <h2>Ready to Start Your Journey?</h2>
+    <a href="/register" class="create-free-account-btn">Create Free Account</a>
+  </section>
+
+  <!-- Footer component loads here (React) -->
+</div>
